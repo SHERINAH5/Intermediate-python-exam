@@ -7,7 +7,7 @@ from app.extensions import db
 #customers blueprint
 customers= Blueprint('categories', __name__,url_prefix='/api/v1/customers')
 
-#creating a category
+#creating a customer
 @customers.route('/create', methods = ['POST'])
 
 
