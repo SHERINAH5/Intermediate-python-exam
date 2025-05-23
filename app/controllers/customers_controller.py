@@ -4,14 +4,14 @@ from flask_jwt_extended import jwt_required, get_jwt_identity
 from app.models.customers import Customer
 from app.extensions import db
 
-#categories blueprint
-categories= Blueprint('categories', __name__,url_prefix='/api/v1/categories')
+#customers blueprint
+customers= Blueprint('categories', __name__,url_prefix='/api/v1/customers')
 
 #creating a category
-@categories.route('/create', methods = ['POST'])
+@customers.route('/create', methods = ['POST'])
 
 
-def createCategory():
+def createCustomer():
 
      #storing request values
     data = request.json
